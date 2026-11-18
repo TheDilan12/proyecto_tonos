@@ -1,0 +1,24 @@
+# Dataset original (se descarga con: python descargar_datos.py)
+data/raw/
+
+# Características de los extractores congelados (~250 MB; las regenera ejecutar_pipeline.py)
+data/intermedios/caracteristicas/
+
+# Catálogo real de la empresa (confidencial): se usa si existe, pero no se publica
+data/catalogo_colorantes.csv
+
+# Material del curso que no hace parte del proyecto
+rubrica.pdf
+
+# Python / Jupyter / sistema
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv*/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*

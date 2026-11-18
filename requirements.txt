@@ -1,0 +1,17 @@
+numpy
+pandas
+pyarrow
+matplotlib
+seaborn
+pillow
+scikit-learn
+scikit-image
+scipy
+torch
+torchvision
+huggingface_hub
+ipykernel
+nbformat
+nbconvert
+transformers
+safetensors

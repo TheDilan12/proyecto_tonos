@@ -1,0 +1,39 @@
+[14:41:47] 21,361 prendas en el alcance textil (Apparel)
+[14:41:47] 1. Segmentación de prendas
+[14:41:51] 2. Objetivo continuo y tabla de prendas
+  medidas 0/21,361
+  medidas 5,000/21,361
+  medidas 10,000/21,361
+  medidas 15,000/21,361
+  medidas 20,000/21,361
+[15:01:20]    train 9,110 · val 1,805 · test 3,010
+[15:01:20] 3. Conjunto de prueba 'contexto real'
+[15:11:52] 5a. Enfoques sin aprendizaje (medición directa)
+[15:19:20] 4-5b. Características + regresión ridge
+[15:20:18]    hist_lab train: (9110, 512) (58 s)
+[15:20:30]    hist_lab val: (1805, 512) (12 s)
+[15:20:49]    hist_lab test: (3010, 512) (19 s)
+[15:21:06]    hist_lab test_real: (3010, 512) (18 s)
+[15:32:18]    resnet50 train: (9110, 2048) (669 s)
+[15:34:34]    resnet50 val: (1805, 2048) (136 s)
+[15:38:20]    resnet50 test: (3010, 2048) (226 s)
+[15:42:00]    resnet50 test_real: (3010, 2048) (220 s)
+[15:57:37]    dinov2_s train: (9110, 768) (917 s)
+[16:00:51]    dinov2_s val: (1805, 768) (194 s)
+[16:06:46]    dinov2_s test: (3010, 768) (355 s)
+[16:11:39]    dinov2_s test_real: (3010, 768) (292 s)
+Traceback (most recent call last):
+  File "C:\Users\dmonsalve\OneDrive - Universidad EAFIT\vision por computador\proyecto_tonos\ejecutar_pipeline.py", line 182, in <module>
+  File "C:\Users\dmonsalve\OneDrive - Universidad EAFIT\vision por computador\proyecto_tonos\ejecutar_pipeline.py", line 127, in main
+    for conj, (ids, fn) in conjuntos.items():
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dmonsalve\OneDrive - Universidad EAFIT\vision por computador\proyecto_tonos\core\caracteristicas.py", line 87, in caracteristicas_cache
+    if nombre == "hist_lab":
+            ^^^^^^^^^^^^^^^^
+  File "C:\Users\dmonsalve\OneDrive - Universidad EAFIT\vision por computador\proyecto_tonos\core\caracteristicas.py", line 71, in extraer
+    partes = []
+    
+  File "C:\Users\dmonsalve\OneDrive - Universidad EAFIT\vision por computador\proyecto_tonos\core\caracteristicas.py", line 63, in <lambda>
+    from transformers import CLIPModel
+                      ^^^^^^^^^^^^^^^^
+AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'numpy'

@@ -1,0 +1,15 @@
+[16:13:41] 21,361 prendas en el alcance textil (Apparel)
+[16:13:41] Dispositivo de cómputo: cpu
+[16:13:41] 1. Segmentación de prendas
+[16:13:45] 2. Objetivo continuo y tabla de prendas
+[16:13:46]    train 9,110 · val 1,805 · test 3,010
+[16:13:46] 3. Conjunto de prueba 'contexto real'
+[16:13:49] 5a. Enfoques sin aprendizaje (medición directa)
+[16:13:49] 4-5b. Características + regresión ridge
+[16:23:53]    clip_b32 train: (9110, 512) (604 s)
+[16:25:55]    clip_b32 val: (1805, 512) (122 s)
+[16:29:29]    clip_b32 test: (3010, 512) (214 s)
+[16:32:59]    clip_b32 test_real: (3010, 512) (210 s)
+[16:33:02] 5c. CLIP zero-shot (nombre de tono -> prototipo)
+Could not reach the Hub ([Errno 11001] getaddrinfo failed). Using cached commit hash for 'openai/clip-vit-base-patch32'.
+[16:33:04] Se omite el fine-tuning (--sin-entrenar). Correr sin esa opción en el PC con GPU.

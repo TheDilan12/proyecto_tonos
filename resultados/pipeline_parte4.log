@@ -1,0 +1,18 @@
+[18:57:37] 21,361 prendas en el alcance textil (Apparel)
+[18:57:37] Dispositivo de cómputo: cpu
+[18:57:37] 1. Segmentación de prendas
+[18:57:41] 2. Objetivo continuo y tabla de prendas
+[18:57:43]    train 9,110 · val 1,805 · test 3,010
+[18:57:43] 3. Conjunto de prueba 'contexto real'
+[18:57:47] 5a. Enfoques sin aprendizaje (medición directa)
+[18:57:48] 4-5b. Características + regresión ridge
+[18:57:48] 5c. CLIP zero-shot (nombre de tono -> prototipo)
+[18:57:48] --sin-entrenar: solo se usan las redes ya entrenadas (para entrenar, correr sin esa opción en GPU).
+[18:57:48] 5d. Fine-tuning MobileNetV3 (E8 estándar, E9 contexto real, E10 red completa + tonos)
+[18:57:53]    máscaras del color dominante (supervisión de E11)
+  máscaras dominantes 0/10,915
+  máscaras dominantes 3,000/10,915
+  máscaras dominantes 6,000/10,915
+  máscaras dominantes 9,000/10,915
+[19:04:08]    hibrida_e11: sin entrenar todavía, se omite
+[19:04:08] Listo.
